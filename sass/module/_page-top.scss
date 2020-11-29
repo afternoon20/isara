@@ -1,0 +1,29 @@
+#page-top {
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  // background-color: $grey;
+  height: 72px;
+  width: 72px;
+  cursor: pointer;
+  z-index: 99999;
+
+  @include mq('sp') {
+    bottom: 20px;
+    right: 10px;
+    // background-color:  $grey;
+    height: 50px;
+    width: 46px;
+  }
+
+  .fas {
+    font-size: 42px;
+    text-align: center;
+    display: block !important;
+    margin-top: 16px;
+
+    @include mq('sp') {
+      font-size: 20px;
+    }
+  }
+}

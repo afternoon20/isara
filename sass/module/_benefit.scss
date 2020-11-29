@@ -1,0 +1,220 @@
+.benefit{
+
+  background-color: $orange;
+  padding-bottom: 40px;
+  
+  &__ttl{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 68px 0 50px 0;
+    letter-spacing: .06em;
+
+    @include mq("tab"){
+      font-size: 24px;
+      padding: 70px 0 52px 0;
+    }
+
+    @include mq("sp"){
+      font-size: 18px;
+      letter-spacing: .08em;
+      padding: 30px 0 32px 0;
+
+    }
+  }
+
+  &__sub{
+    font-size: 16px;
+    letter-spacing: .08em;
+
+    @include mq("tab"){
+      font-size: 14px;
+      letter-spacing: .1em;
+    }
+
+    @include mq("sp"){
+      font-size: 12px;
+      letter-spacing: .14em;
+      line-height: 1.6;
+    }
+
+    &--wh{
+      font-size: inherit;
+      color: #fff;
+      letter-spacing: inherit;
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: block;
+      }
+    }
+  }
+
+  &-list{
+    display: block;
+    border: 2px solid #fff;
+    margin: 140px 38px 0 38px;
+
+    @include mq("tab"){
+     margin: 128px 38px 0 38px;
+    }
+
+    @include mq("sp"){
+      margin: 90px 15px 0 15px;
+    }
+
+    &__ttl{
+      display: block;
+      background-color: $orange;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      line-height: 1.6;
+      padding-bottom: 38px;
+      margin: 0 auto;
+      margin-top: -26px;
+      width: 60%;
+
+      @include mq("tab"){
+        font-size: 24px;
+        margin-top: -30px;
+        padding-bottom: 15px;
+        letter-spacing: .08em;
+        width: 45%;
+      }
+
+      @include mq("sp"){
+        font-size: 18px;
+        width: 250px;
+        text-align: left;
+        padding-left: 20px;
+      }
+      
+    }
+
+    &-sp{
+      
+      text-align: left;
+      display: none;
+      // background-color: #fff;
+      padding: 7px 40px 0 20px;
+
+      @include mq("sp"){
+        display: block;
+      }
+
+
+      &__item{
+        // @include flex($justify:space-between);
+        // flex-wrap: nowrap;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        &:last-child{
+          margin-bottom: 50px;
+        }
+        
+
+      }
+
+      &__circle{
+        display: block;
+        color: $orange;
+        background-color: #fff;
+        font-size: 12px;
+        letter-spacing: .08em;
+        height: 60px;
+        line-height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        &-area{
+          width: 31%;
+          float: left;
+          padding-left: 20px;
+          
+
+          
+        }
+
+      }
+
+      &__txt{
+        display: block;
+        // width: 300px;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: .12em;
+        line-height: 1.6;
+        width: 68%;
+        padding-top: 10px;
+        float: right;
+        
+      }
+    }
+  }
+
+  &-content{
+    @include flex($justify:space-around);
+    padding: 5px 30px 50px 30px;
+
+    @include mq("tab"){
+      flex-direction: column;
+      padding: 5px 30px 55px 30px;
+    }
+
+    @include mq("sp"){
+      display: none;
+    }
+    
+
+    &__item{
+      background-color: #fff;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: relative;
+
+      @include mq("tab"){
+        margin-bottom: 24px;
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      
+    }
+
+    &__txtarea{
+      position: absolute;
+      top: 24%;
+      left: 6%;
+      width: 218px;
+
+      &--last{
+        top: 28%;
+      }
+    }
+
+    &__ttl{
+      color: $orange;
+      font-size: 24px;
+      margin-bottom: 18px;
+      letter-spacing: .08em;
+
+    }
+
+    &__txt{
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.6;
+      letter-spacing: .1em;
+    }
+  }
+}

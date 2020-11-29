@@ -1,0 +1,164 @@
+.not-volunteer{
+  background: url("../img/specialdetail.jpg") center no-repeat;
+  background-size: cover;
+  color: #fff ;
+  padding-bottom: 80px;
+
+  @include mq("sp"){
+    background: url("../img/specialdetailsp.jpg") center no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+
+  }
+
+  &__ttl{
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.6em;
+    letter-spacing: .05em;
+    margin: 67px 0 30px 0;
+
+    @include mq("tab"){
+      font-size: 24px;
+    }
+
+    @include mq("sp"){
+      font-size: 18px;
+      margin: 40px 0 20px 0;
+      letter-spacing: .08em;
+    }
+
+    &--brak{
+      margin: 40px 0 24px 0 ;
+      padding: 20px 120px;
+
+      @include mq("tab"){
+        padding: 20px 160px;
+      }
+
+      @include mq("sp"){
+        display: block;
+        padding: 10px 0 12px 0;
+        line-height: 2.3em;
+        margin: 42px 0 15px 0;
+      }
+
+      &:before{
+        position: absolute;
+        content: '';
+        width: $brak-size;
+        height: $brak-size;
+
+        @include mq("sp"){
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      &::after{
+        position: absolute;
+        content: '';
+        width: $brak-size;
+        height: $brak-size;
+
+      @include mq("sp"){
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      border-top: 4px solid #fff;
+      border-left: 4px solid #fff;
+
+      @include mq("sp"){
+        // top: -3px;
+        left: 20px;
+      }
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #fff;
+
+      @include mq("tab"){
+        bottom: 5px;
+      }
+      @include mq("sp"){
+        // bottom: 1px;
+        right: 20px;
+      }
+    }
+    }
+  }
+
+  &__txt{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    line-height: 1.6;
+
+    @include mq("tab"){
+      font-size: 16px;
+    }
+
+    @include mq("sp"){
+      font-size: 12px;
+    }
+
+    // &:last-child{
+    //   padding-bottom: 80px;
+
+    // }
+  }
+
+  // 改行クラス
+  &__ind{
+    display: none;
+
+    @include mq("sp"){
+      display: block;
+
+    }
+
+    &--ttl{
+      display: none;
+      font-size: inherit;
+      font-weight: inherit;
+
+      @include mq("sp"){
+        display: block; 
+      }
+    }
+
+    &--non{
+      display: block;
+
+      @include mq("sp"){
+        display: none;
+      }
+    }
+
+    &--brak{
+      display: none;
+      font-size: inherit;
+      font-weight: inherit;
+
+      @include mq("sp"){
+        display: block;
+      }
+
+    }
+
+    
+
+
+  }
+
+}

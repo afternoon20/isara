@@ -1,0 +1,85 @@
+.ttl{
+  font-size: 28px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 35px 60px;
+  // margin: 0 155px;
+  letter-spacing: .05em;
+
+  @include mq("tab"){
+    font-size: 24px;
+    margin: 0;
+  }
+
+  @include mq("sp"){
+    padding: 25px 60px;
+  }
+
+  &--brak{
+    position: relative;
+    width: 860px;
+    max-width: 100%; 
+    line-height: 40px;
+
+    @include mq("sp"){
+      font-size: 18px;
+      width: 100%;
+      max-width: 100%; 
+      line-height: 40px;
+      // margin: 0 15px;
+      letter-spacing: .08em;
+    }
+
+    &:before{
+      position: absolute;
+      content: '';
+      width: $brak-size;
+      height: $brak-size;
+
+      @include mq("sp"){
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &::after{
+      position: absolute;
+      content: '';
+      width: $brak-size;
+      height: $brak-size;
+
+      @include mq("sp"){
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      border-top: 4px solid $orange;
+      border-left: 4px solid $orange;
+
+      @include mq("sp"){
+        top: -3px;
+        left: -5px;
+      }
+    }
+
+    &::after {
+      bottom: 10px;
+      right: 0;
+      border-bottom: 4px solid $orange;
+      border-right: 4px solid $orange;
+
+      @include mq("tab"){
+        bottom: 5px;
+      }
+      @include mq("sp"){
+        bottom: 1px;
+        right: -5px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.header{
+  // background-color: $base-color;
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 999;
+
+  >.inner{
+    padding: 15px 0;
+
+    @include mq("tab"){
+      padding: 15px 10px;
+    }
+
+    @include mq("sp"){
+      padding: 0;
+    }
+  }
+
+  &__left{
+    @include mq("sp"){
+      margin-top: 5px;
+    }
+  }
+
+  &-wrapper{
+    @include flex;
+    text-align: left;
+  }
+  
+  &__logo{
+    display: inline-block;
+    vertical-align: -.6em;
+    width: 128px;
+
+    @include mq("sp"){
+      margin: 3px 0 0 10px;
+      width: 90px;
+    }
+  }
+
+  &__ttl{
+    display: inline;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin-left: 3px;
+
+    @include mq("tab"){
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+
+    @include mq("sp"){
+      display: none;
+    }
+
+    &--sp{
+      display: none;
+      font-size: 10px;
+      margin: 0 0 0 10px;
+      font-weight: 300;
+
+      @include mq("sp"){
+        display: block;
+        
+      }
+    }
+  }
+
+  }

@@ -1,0 +1,144 @@
+.accordion{
+  margin: 0 28px 5px 28px;
+  font-family:"Hiragino Kaku Gothic Pro";
+
+  @include mq("tab"){
+    margin: 0 60px 5px 60px;
+  }
+
+  @include mq("sp"){
+    margin: 0 15px 5px 15px;
+  }
+
+  &__top{
+    position: relative;
+    padding: 20px;
+    border: 1px solid $grey;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 .1em $grey;
+    border-radius: 2px;
+
+    @include mq("sp"){
+      padding: 10px 40px 10px 10px;
+    }
+
+    &:after{
+      @include awesome("\f107");
+      position: absolute;
+      top: 20%;
+      right: 20px;
+      color: $grey;
+      font-size: 36px;
+      z-index: 0;
+
+      @include mq("sp"){
+        font-size: 24px;
+        right: 10px;
+      }
+    }
+
+    &:hover{
+      >.accordion__ttl{
+        border-bottom: 1px solid #000;
+
+      }
+    }
+
+    &--active{
+      position: relative;
+      box-shadow: none;
+
+      &:after{
+      @include awesome("\f106");
+      position: absolute;
+      top: 20%;
+      right: 20px;
+      color: $grey;
+      font-size: 36px;
+      z-index: 10;
+
+      @include mq("sp"){
+        font-size: 24px;
+        right: 10px;
+      }
+    }
+
+    }
+  }
+  
+  &__ttl{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline;
+    text-align: left;
+    // margin-left: 10px;
+
+    @include mq("tab"){
+      font-size: 16px;
+    }
+
+    @include mq("sp"){
+      font-size: 15px;
+      letter-spacing: .1em;
+    }
+    
+    // &:before{
+    //   @include awesome("\f059");
+    //   position: absolute;
+    //   top: 15%;
+    //   left: -20px;
+    //   color: $blue;
+    //   font-size: 10px;
+    //   text-align:center;
+    //   border: 1px solid $blue;
+    //   border-radius: 50px;  
+    //   width: 18px;
+    //   height: 18px;
+    //   line-height: 16px;
+
+    //   @include mq("sp"){
+    //     top: 15%;
+    //     left: -20px;
+    //     color: $blue;
+    //     font-size: 2px;
+    //     text-align:center;
+    //     border: 1px solid $blue;
+    //     border-radius: 50px;  
+    //     width: 18px;
+    //     height: 18px;
+    //     line-height: 16px;
+
+    //   }
+
+    //  }
+    &--icon{
+      color: $blue;
+      font-size: 18px;
+      margin-right: 2px;
+      vertical-align: text-bottom;
+
+      @include mq("sp"){
+        font-size: 13px;
+      }
+    }
+  }
+
+ 
+  &__bottom{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: .05em;
+    line-height: 1.5em;
+    padding: 24px;
+
+    @include mq("sp"){
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      padding: 20px 40px 38px 20px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "setting/config";
+@import "base/reset";
+// mixin
+@import "mixin/mq";
+@import "mixin/hover-underline";
+@import "mixin/awesome";
+@import "mixin/form";
+@import "mixin/flex";
+// module
+@import "module/page-top";
+@import "module/btn";
+@import "module/inner";
+@import "module/header";
+@import "module/accordion";
+@import "module/main-visual";
+@import "module/catch";
+@import "module/how-to";
+@import "module/sns";
+@import "module/ttl";
+@import "module/about";
+@import "module/step";
+@import "module/can-learn";
+@import "module/merit";
+@import "module/member";
+@import "module/learn-content";
+@import "module/qa";
+@import "module/flow";
+@import "module/accordion-flow";
+@import "module/why-bangkok";
+@import "module/benefit";
+@import "module/not-volunteer";
+@import "module/message";
+@import "module/document";
+@import "module/question";
+@import "module/footer";
+
+body{
+
+  @include mq("sp"){
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+

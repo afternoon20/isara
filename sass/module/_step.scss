@@ -1,0 +1,215 @@
+.step{
+
+  background: url("../img/aboutsecondbg.jpg") center center no-repeat;
+  background-size: cover;
+
+  @include mq("sp"){
+    background: url("../img/aboutsecondbgsp.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  
+  &__ttl{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    padding: 65px 0 32px 0;
+    letter-spacing: .05em;
+
+    @include mq("tab"){
+      font-size: 24px;
+      padding: 60px 0 28px 0;
+    }
+
+    @include mq("sp"){
+      font-size: 18px;
+      padding: 50px 0 20px 0;
+      letter-spacing: .1em;
+      line-height: 20px;
+
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: block;
+      }
+    }
+  }
+
+  &__txt{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .07em;
+    margin-bottom: 24px;
+
+    @include mq("tab"){
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    @include mq("sp"){
+      font-size: 12px;
+      line-height: 20px;
+      margin-bottom: 12px;
+
+    }
+
+    &--orange{
+      color: $orange;
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: block;
+      }
+    }
+  }
+
+  &-list{
+    @include flex($justify: center);
+    padding: 10px 15px 40px 0;
+    margin: 0 auto;
+
+    @include mq("tab"){
+      flex-direction: column;
+      padding: 10px 0 60px 0;
+    }
+
+    @include mq("sp"){
+      padding: 20px 0 40px 0;
+    }
+
+    &__item{
+      background-color: #fff;
+      margin-right: 20px;
+      width: calc(33.333% - 40px / 3);
+      font-size: 14px;
+      border-radius: 5px;
+
+      &:last-child{
+        margin-right: 0;
+
+        @include mq("tab"){
+          margin: 0 auto;
+        }
+      }
+
+      @include mq("tab"){
+        width: 38%;
+        margin: 0 auto 20px auto;
+      }
+
+      @include mq("sp"){
+        width: calc(100% - 60px);
+        margin: 0 auto 15px auto;
+      }
+    }
+
+    &__ttl{
+      background-color: $orange;
+      color: #fff;
+      margin: 30px 30px 34px 30px;
+      padding: 5px 0;
+      border-radius: 5px;
+      letter-spacing: .15em;
+      font-size: 16px;
+
+      @include mq("tab"){
+        font-size: 14px;
+      }
+
+      @include mq("sp"){
+        padding: 3px 0;
+        margin: 16px 50px 18px 50px;
+        font-size: 12px;
+      }
+    }
+
+    &__txt{
+      font-size: 14px;
+      margin-bottom: 24px;
+      font-weight: 600;
+      letter-spacing: .1em;
+
+      @include mq("tab"){
+        font-size: 12px;
+        letter-spacing: .03em;
+      }
+
+      @include mq("sp"){
+        margin-bottom: 12px;
+      }
+
+
+      &:last-child{
+        font-size: 16px;
+        margin-bottom: 34px;
+
+        @include mq("tab"){
+          font-size: 14px;
+          letter-spacing: .1em;
+        }
+
+        @include mq("sp"){
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &-blue{
+    padding: 45px 0;
+    text-align: center;
+    background-color: $blue;
+
+    @include mq("tab"){
+      padding: 42px 0;
+    }
+
+    @include mq("sp"){
+      padding: 20px 0;
+    }
+
+    &__txt{
+      color: #fff;
+      border-radius: 5px;
+      letter-spacing: .12em;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 12px;
+
+      @include mq("tab"){
+        font-size: 15px;
+        letter-spacing: .15em;
+        margin-bottom: 10px;
+      }
+
+      @include mq("sp"){
+        font-size: 11px;
+        letter-spacing: .22em;
+        margin-bottom: 8px;
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &--orange{
+        color:$orange;
+      }
+
+      &--ind{
+        display: none;
+
+        @include mq("sp"){
+          display: block;
+        }
+      }
+    }
+  }
+}

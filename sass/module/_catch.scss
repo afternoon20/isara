@@ -1,0 +1,81 @@
+.catch{
+  background-color: $orange;
+
+  &__txt{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    line-height: 32px;
+
+    @include mq("tab"){
+      font-size: 17px;
+    }
+
+    @include mq("sp"){
+      font-size: 14px;
+    }
+
+    &:first-child{
+      padding: 32px 0 12px 0;
+
+      @include mq("tab"){
+        letter-spacing: .2em;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 28px 0 8px 0;
+        line-height: 24px;
+      }
+      @include mq("sp"){
+        letter-spacing: .1em;
+        padding: 15px 0 6px 0;
+      }
+    }
+
+    &--red{
+      color: #C7254D;
+      background-color: #F9F1F4;
+      font-size: 18px;
+      font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+      display: inline;
+      border-radius: 3px;
+      padding: 2px 4px;
+      
+      @include mq("tab"){
+        font-size: 14px;
+        letter-spacing: .13em;
+      }
+
+      @include mq("sp"){
+        letter-spacing: .08em;
+      }
+    }
+
+    &--gen{
+      letter-spacing: .12em;
+      margin-bottom: 32px;
+
+      @include mq("tab"){
+        letter-spacing: .05em;
+        margin-bottom: 25px;
+      }
+
+      @include mq("sp"){
+        line-height: 24px;
+
+      }
+
+
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: inline;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,107 @@
+.how-to{
+  background: url("../img/introbottom.jpg") center center no-repeat;
+  background-size: 100% auto;
+  // height: 587px;
+  padding-top: 40px;
+  padding-bottom: 180px;
+
+
+  @include mq("tab"){
+    background-size: auto;
+    padding: 40px 20px 180px 20px;
+
+  }
+
+  @include mq("sp"){
+    height: 658px;
+    padding-top: 30px;
+    background: url("../img/introbottom.jpg") center bottom no-repeat;
+    background-size: 100% auto;
+  }
+
+  &__ttl{
+    @include mq("tab"){
+      margin: 0 15px;
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: inline;
+      }
+    }
+    
+
+  }
+
+  &__txt{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: .08em;
+    line-height: 32px;
+
+    @include mq("tab"){
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include mq("sp"){
+      font-size: 15px;
+      letter-spacing: .01em;
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: inline;
+      }
+    }
+
+    &-area{
+      margin-top: 25px;
+
+      @include mq("sp"){
+        margin-top: 30px;
+      }
+
+      &--sp{
+        margin-top: 0;
+
+        @include mq("sp"){
+          margin-top: 30px;
+        }
+      }
+
+      &:nth-child(2){
+        margin-top: 30px;
+
+        @include mq("sp"){
+          margin-top: 15px;
+        }
+      }
+
+
+    }
+
+    &--emp{
+      position: relative;
+      z-index: 0;
+      font-weight: 600;
+      margin: 0 0 0 8px;
+
+      &::before{
+        position: absolute;
+        content: "";
+        height: 30%;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $orange;
+      
+      }
+    }
+  }
+}

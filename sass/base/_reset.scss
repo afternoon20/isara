@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+    // font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  line-height: 1;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+dt,
+dd, 
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td,
+ul,
+ol,
+dl,
+li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1;
+  vertical-align:baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+	display: block;
+}
+
+li,ol {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+// カスタム
+body{
+  letter-spacing: normal;
+}
+
+
+

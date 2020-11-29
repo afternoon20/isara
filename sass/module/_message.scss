@@ -1,0 +1,100 @@
+.message{
+  text-align: center;
+  padding-bottom: 90px;
+
+  @include mq("sp"){
+    padding: 0 20px 110px 15px;
+  }
+
+
+  &__ttl{
+    font-size: 28px;
+    margin-top: 67px;
+    font-weight: 600;
+    letter-spacing: .06em;
+
+    @include mq("tab"){
+      font-size: 24px;
+    }
+
+    @include mq("sp"){
+      
+    }
+  }
+
+  &__sub{
+    font-size: 20px;
+    margin-top: 47px;
+    font-weight: 600;
+    letter-spacing: .08em;
+
+    @include mq("tab"){
+      font-size: 16px;
+      letter-spacing: .08em;
+    }
+  }
+
+  &__ind{
+    display: none;
+  }
+
+  &__txt{
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 1.4;
+    opacity: .7;
+
+    @include mq("sp"){
+      line-height: 1.6em;
+    }
+  }
+
+  &__area{
+    @include flex($justify:center,$align:flex-start);
+    flex-wrap: nowrap;
+    margin: 50px auto 0 auto;
+    text-align: center;
+
+    @include mq("sp"){
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img{
+    width: 193px;
+
+    @include mq("tab"){
+      width: 225px;
+    }
+
+    @include mq("sp"){
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__content{
+    text-align: left;
+    margin-left: 30px;
+    width: 630px;
+
+    @include mq("tab"){
+      width: 750px;
+      margin-left: 40px;
+    }
+
+    @include mq("sp"){
+      width: 100%;
+      margin-left: 0;
+      
+    }
+    
+  }
+
+  &__para{
+    margin: 0px 0 15px 0;
+
+    @include mq("sp"){
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.footer{
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 40px 0 30px 0;
+
+  &__ttl{
+    letter-spacing: .15em;
+    margin-bottom: 8px;
+  }
+
+  &__copy{
+    letter-spacing: .15em;
+  }
+
+  &__design{
+    letter-spacing: .15em;
+  }
+}

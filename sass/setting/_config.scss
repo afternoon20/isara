@@ -1,0 +1,26 @@
+// レイアウト幅
+$layout-width-inner: 1170px;
+// ブレークポイント
+$breakpoints: ( "sp": "screen and (max-width: 767px)", 
+                "tab": "screen and (max-width: #{$layout-width-inner - 1px})", 
+                "pc": "screen and (min-width: #{$layout-width-inner})", );
+//画像格納ディレクトリ
+$imgDir: '/img/';
+
+// orange
+$orange: #ebb94c;
+
+// クリーム色
+$cream: #fef5df;
+
+// ボタンカラー
+$btn-color: #da6b63;
+
+// ブルー
+$blue: #006ea9;
+
+// グレー
+$grey: #ECECEC;
+
+// タイトルカッコの長さ
+$brak-size: 50px;

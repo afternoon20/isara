@@ -1,0 +1,345 @@
+.merit{
+  background-color: $cream;
+  width: 100%;
+  font-family: "Hiragino Kaku Gothic Pro";
+
+  >.inner{
+    // padding: 0 20px;
+
+    @include mq("tab"){
+      padding: 0 70px;
+    }
+
+    @include mq("sp"){
+      padding: 0 15px;
+    }
+  }
+
+  &__ttl{
+    font-size: 28px;
+    font-weight: 600;
+    padding:  28px 0 25px 0;
+    // margin: 40px 20px 0 20px;
+    margin: 40px 0 0 0;
+    width: 860px;
+
+    @include mq("tab"){
+      font-size: 24px;
+      padding:  29px 0 20px 0;
+    }
+    
+    @include mq("sp"){
+      font-size: 18px;
+      margin: 30px 0 0 0;
+      padding: 25px 0 12px 0;
+      width: 100%;
+    }
+
+    &-wrapper{
+      width: 100%;
+
+      @include mq("sp"){
+        padding: 0 6px;
+      }
+      
+    }
+
+    &--sm{
+      font-size: 20px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 10px;
+
+      @include mq("tab"){
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+
+      @include mq("sp"){
+        font-size: 15px;
+        // padding-top: 20px;
+        margin-bottom: 10px;    
+      }
+    }
+
+    &--ind{
+      display: inline;
+      font-size: 20px;
+      font-weight: 600;
+
+      @include mq("tab"){
+        font-size: 16px;
+      }
+      
+      @include mq("sp"){
+        display: block;
+        margin-top: 6px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  &-list{
+    @include flex($justify:center,$align:flex-start);
+    text-align: left;
+    margin: 30px 15px 0 15px;
+
+    @include mq("tab"){
+      @include flex($row:column,$align:center);
+      // background-color: orange;
+      // margin: 0 66px 0 66px;
+      margin: 34px auto 0 auto;
+    }
+
+    @include mq("sp"){
+      margin: 19px 0 0 0;
+    }
+
+    &__item{
+      
+      // background-color: red;
+      width: calc(33.333% - 60px / 3);
+      margin-right: 30px;
+
+      @include mq("tab"){
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+        
+      }
+
+      @include mq("sp"){
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      &:last-child{
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    &__ttl{
+      color: $orange;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 15px;
+      letter-spacing: .08em;
+
+      @include mq("tab"){
+        font-size: 16px;
+        margin-top: 12px;
+        text-align: center;
+      }
+
+      @include mq("sp"){
+        font-size: 15px;
+        margin-top: 14px;
+        letter-spacing: .09em;
+      }
+    }
+
+    &__txt{
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 14px;
+      letter-spacing: .09em;
+      line-height: 1.6;
+      text-align: left;
+      // word-break: normal;
+
+      @include mq("tab"){
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 13px;
+        padding: 0 15px;
+        letter-spacing: .11em;
+      }
+
+      @include mq("sp"){
+        font-size: 12px;
+        padding: 0 20px;
+        letter-spacing: .12em;
+      }
+      
+    }
+
+    &__img{
+      margin: 0 auto;
+      height: 180px;
+      // width: 358px;
+
+      @include mq("tab"){
+        width: 300px;
+      }
+
+      @include mq("sp"){
+        height: 120px;
+        width: 100%;
+      }
+
+      &--1{
+        background: url("../img/learnfromfreelancer.jpg") center center no-repeat;
+        background-size: cover;
+        
+      }
+      &--2{
+        background: url("../img/learnfromprojects.jpg") center center no-repeat;
+        background-size: cover;
+      }
+
+      &--3{
+        background: url("../img/actuallyfree.jpg") center center no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &-caution{
+    background-color: #fff;
+    border: 2px solid $orange;
+    margin-top: 48px;
+    padding: 48px 0;
+    text-align: center;
+    border-radius: 5px;
+
+    @include mq("tab"){
+      margin-top: 68px;
+      padding: 48px 15px 50px 15px;
+    }
+
+    @include mq("sp"){
+      margin: 32px 5px 0 5px;
+      padding: 15px 12px;
+      letter-spacing: 0;
+      
+    }
+
+    &__ttl{
+      color: $orange;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: .06em;
+
+      @include mq("tab"){
+        font-size: 24px;
+      }
+
+      @include mq("sp"){
+        font-size: 18px;
+        letter-spacing: .08em;
+      }
+    }
+
+    &__sub{
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      margin-top: 24px;
+
+      @include mq("tab"){
+        font-size: 16px;
+        margin-top: 16px;
+        letter-spacing: .09em;
+        line-height: 1.6;
+
+        @include mq("sp"){
+          font-size: 15px;
+          letter-spacing: .1em;
+          margin-top: 16px;
+        }
+      }
+
+      &--br{
+        display: inline;
+        font-size: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+
+        @include mq("sp"){
+          display: block;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    &__txt{
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: .09em;
+      line-height: 1.6;
+
+      @include mq("tab"){
+        font-size: 14px;
+        letter-spacing: .1em;
+      }
+
+      @include mq("sp"){
+        font-size: 8px;
+        letter-spacing: 0;
+      }
+      
+      &-area{
+        margin-top: 18px;
+
+        @include mq("tab"){
+          margin-top: 10px;
+          padding: 0 5px;
+        }
+
+        @include mq("sp"){
+          margin-top: 15px;
+          padding: 0 0;
+        }
+      }
+
+      &--br{
+        display: block;
+        font-size: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+
+        @include mq("sp"){
+          display: inline;
+        }
+      }
+    }
+  }
+
+  &__txt{
+    font-size: 14px;
+    margin-top: 42px;
+    letter-spacing: .11em;
+    line-height: 1.6;
+    padding: 0 10px 50px 10px;
+    text-align: center;
+
+    @include mq("tab"){
+      font-size: 12px;
+      margin-top: 40px;
+      padding-bottom: 40px;
+      letter-spacing: 0em;
+    }
+
+    @include mq("sp"){
+      margin-top: 15px;
+    }
+
+    &--1{
+
+      @include mq("sp"){
+        display: block;
+        line-height: 1.6;
+      } 
+    }
+
+    &--2{
+      @include mq("sp"){
+        display: none;
+      }
+    }
+  }
+
+
+}

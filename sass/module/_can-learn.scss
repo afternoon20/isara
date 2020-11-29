@@ -1,0 +1,103 @@
+.can-learn{
+  // background-color: red;
+  font-family: "Hiragino Kaku Gothic Pro";
+
+  &__ttl{
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 68px;
+    letter-spacing: .06em;
+
+    @include mq("tab"){
+      font-size: 24px;
+      letter-spacing: .04em;
+    }
+
+    @include mq("sp"){
+      font-size: 28px;
+      padding-top: 50px;
+      letter-spacing: .08em;
+    }
+
+    &--sub{
+      font-size: 16px;
+      font-weight: 600;
+
+      @include mq("sp"){
+        font-size: 12px;
+      }
+
+    }
+  }
+
+  &__txt{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 52px;
+    letter-spacing: .08em;
+
+    @include mq("tab"){
+      font-size: 16px;
+      margin-top: 50px;
+    }
+
+    @include mq("sp"){
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: .09em;
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: block;
+      }
+    }
+
+    &--sm{
+      font-size: 16px;
+      margin-top: 45px;
+      font-weight: 600;
+      padding-bottom: 60px;
+
+      @include mq("tab"){
+        margin-top: 62px;
+        font-size: 14px;
+      }
+
+      @include mq("sp"){
+        margin-top: 18px;
+        font-size: 12px;
+        letter-spacing: .17em;
+        padding-bottom: 28px;
+      }
+    }
+  }
+
+  &-list{
+    margin-top: 45px;
+
+    @include mq("tab"){
+      margin-top: 64px;
+    }
+
+    @include mq("sp"){
+      margin-top: 15px;
+    }
+
+    &__img{
+      width: 180px;
+      margin-right: 40px;
+
+      @include mq("sp"){
+        width: 120px;
+        margin-right: 24px;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

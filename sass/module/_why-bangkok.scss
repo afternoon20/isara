@@ -1,0 +1,106 @@
+.why-bangkok{
+  background: url("../img/bangkokbg.jpg") center center no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  @include mq("sp"){
+    background: url("../img/bangkokbgsp.jpg") center center no-repeat;
+  background-size: cover;
+  }
+
+  > .inner{
+    text-align: left;
+    padding: 0 90px;
+
+    @include mq("tab"){
+      padding: 0 60px;
+    }
+
+    @include mq("sp"){
+      padding: 0 35px;
+    }
+  }
+  
+
+  &__ttl{
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 107px;
+    margin-bottom: 30px;
+    letter-spacing: .12em;
+
+    @include mq("tab"){
+      padding-top: 68px;
+      margin-bottom: 29px;
+    }
+
+    @include mq("sp"){
+      padding-top: 48px;
+      text-align: center;
+      
+      
+    }
+  }
+
+  &__sub{
+    font-size: 14px;
+    opacity: .8;
+    margin-bottom: 25px;
+    letter-spacing: .1em;
+    line-height: 1.4;
+
+    @include mq("tab"){
+      font-size: 12px;
+      letter-spacing: 0em;
+      line-height: 1.6;
+    }
+  }
+
+  &-list{
+
+    &__txt{
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: .09em;
+
+      @include mq("tab"){
+        font-size: 14px;
+        letter-spacing: .1em;
+        margin-bottom: 18px;
+      }
+
+      @include mq("sp"){
+        font-size: 12px;
+        margin-bottom: 15px;
+        letter-spacing: .13em;
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__txt{
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    font-weight: 600;
+    letter-spacing: .07em;
+
+    @include mq("tab"){
+      font-size: 16px;
+      letter-spacing: .1em;
+      margin-top: 28px;
+      margin-bottom: 53px;
+    }
+
+    @include mq("sp"){
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+  }
+}

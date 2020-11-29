@@ -1,0 +1,171 @@
+.member{
+  background: url("../img/teacherbg.jpg") center no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 44px;
+
+  @include mq("sp"){
+    background: url("../img/teacherbgsp.jpg") center 26% no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    
+  }
+  
+
+  &__ttl{
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 90px;
+    letter-spacing: .06em;
+
+    @include mq("sp"){
+      font-size: 18px;
+      padding-top: 72px;
+    }
+  }
+
+  &__txt{
+    font-size: 16px;
+    font-weight: 600; 
+    margin-top: 42px;
+    margin-bottom: 210px;
+    letter-spacing: .08em;
+
+    @include mq("sp"){
+      font-size: 12px;
+      margin-top: 50px;
+      letter-spacing: .1em;
+      margin-top: 47px;
+      margin-bottom: 134px;
+      letter-spacing: .12em;
+    }
+
+    &--ind{
+      
+      @include mq("sp"){
+        display: block;
+        margin-top: 7px;
+      }
+    }
+  }
+
+  &-list{
+    @include flex($justify:center, $align:flex-start);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 200px;
+    // padding: 0 20px;
+
+    @include mq("sp"){
+      margin-bottom: 0;
+
+    }
+    
+    &:last-child{
+      margin-bottom: 0;
+    }
+    
+    &__item{
+
+      display: inline-block;
+      font-family: "ヒラギノ角ゴ Pro W1";
+      font-size: 16px;
+      font-weight: 300;
+      width: 375px;
+      border: 3px solid #fff;
+      position: relative;
+      margin-right: 30px;
+      padding: 0 40px;
+
+      @include mq("tab"){
+        font-size: 14px;
+      }
+
+      @include mq("sp"){
+        width: 100%;
+        margin: 0 10px 120px 10px;
+        padding: 0 10px;
+      }
+      
+      &:last-child{
+        margin-right: 0;
+
+        @include mq("sp"){
+          margin: 0 10px 0 10px;
+        }
+      }
+
+      &--bottom{
+        @include mq("sp"){
+          margin-bottom: 120px !important;
+        }
+      }
+    }
+
+    &__img{
+      border-radius: 50%;
+      position: absolute;
+      top: -165px;
+      left: calc(50% - 100px);
+
+      @include mq("sp"){
+        width: 120px;
+        top: -90px;
+        left: calc(50% - 60px);
+      }
+    }
+
+     &__job{
+      font-size: inherit;
+      font-weight: inherit;
+      margin-top: 45px;
+      text-align: center;
+      letter-spacing: .1em;
+
+      @include mq("sp"){
+        font-size: 12px;
+        margin-left: 0;
+        margin-top: 42px;
+      }
+    }
+
+    &__name{
+      font-size: inherit;
+      font-weight: inherit;
+      margin-top: 18px;
+      text-align: center;
+      letter-spacing: .1em;
+
+      @include mq("sp"){
+        font-size: 12px;
+        margin-top: 17px;
+        letter-spacing: .11em;
+      }
+
+    }
+
+    &__txt{
+      font-size: inherit;
+      line-height: 1.6;
+      text-align: left;
+      letter-spacing: .09em;
+      margin-top: 15px;
+      margin-bottom: 50px;
+
+      @include mq("tab"){
+      letter-spacing: .11em;
+      }
+
+      @include mq("sp"){
+        font-size: 12px;
+        margin-bottom: 20px;
+        letter-spacing: .125em;
+      }
+    }
+
+    &__br{
+      display: block;
+      margin-bottom: 37px;
+    } 
+  }
+}

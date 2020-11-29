@@ -1,0 +1,167 @@
+.about{
+  width: 100%;
+  background-color: $cream;
+  padding-bottom: 60px;
+
+  @include mq("tab"){
+    padding-bottom: 70px; 
+    padding: 0 20px 60px 20px;
+  }
+
+  &-top{
+    display: block;
+    color: #fff;
+    
+    &__txt{
+      display: inline-block;
+      font-size: 14px;
+      font-weight: lighter;
+      margin: 0 auto;
+      letter-spacing: .1em;
+      height: 80px;
+      width: 80px;
+      margin-top: -50px;
+      margin-bottom: 40px;
+      padding-top: 34px;
+      border-radius: 50%;
+      background-color: $orange;
+
+      @include mq("sp"){
+        font-size: 12px;
+        height: 60px;
+        width: 60px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+        padding-top: 24px;
+
+      }
+    }
+  }
+
+  &__txt{
+    font-size: 20px;
+    margin: 36px 0 35px 0;
+    font-weight: 600;
+    letter-spacing: .07em;
+
+    @include mq("tab"){
+      font-size: 16px;
+      letter-spacing: .09em;
+      margin: 35px 0 35px 0;
+    }
+
+    @include mq("sp"){
+      font-size: 15px;
+      line-height: 25px;
+      margin: 10px 0 30px 0;
+      letter-spacing: .1em;
+    }
+
+    &--ind{
+      display: none;
+
+      @include mq("sp"){
+        display: inline;
+      }
+    }
+
+  }
+
+  &-list{
+    background-color: #fff;
+    border: 2px solid $orange;
+    width: 100%;
+    border-radius: 3px;
+
+    @include mq("tab"){
+      // width: calc(100% - 40px);
+      margin: 0 auto;
+    }
+
+    &__ttl{
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      padding: 36px 0 24px 0;
+
+      @include mq("tab"){
+        font-size: 16px;
+        padding: 34px 0 25px 0;
+      }
+
+      @include mq("sp"){
+        font-size: 15px;
+        padding: 10px 0 18px 0;
+        line-height: 24px;
+      }
+    }
+
+    &__content{
+      @include flex($justify:center,$align:flex-end);
+      margin-bottom: 40px;
+      padding: 0 237px;
+
+      @include mq("tab"){
+        padding: 0 20px 8px 20px;
+        
+      }
+
+      @include mq("sp"){
+        margin-bottom: 0;
+        padding: 0 25px 18px 25px;
+        // justify-content: space-around;
+      }
+    }
+
+    &__item{
+      margin-right: 29px;
+
+      @include mq("tab"){
+        margin-right: 28px;
+      }
+
+      @include mq("sp"){
+        margin-bottom: 10px;
+        margin-right: 20px;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+
+    &__img{
+      margin-bottom: 10px;
+
+      @include mq("tab"){
+        margin-bottom: 10px;
+      }
+
+      @include mq("sp"){
+        height: 30px;
+        margin-bottom: 9px;
+      }
+
+    }
+    
+    &__txt{
+      font-size: 12px;
+      font-weight: lighter;
+      // letter-spacing: .1em ;
+      line-height: 20px;
+
+      @include mq("tab"){
+        letter-spacing: .1em;
+        line-height: 18px;
+      }
+
+      @include mq("sp"){
+        font-size: 10px;
+        line-height: 16px;
+      }
+
+    }
+  }
+
+
+}

@@ -1,0 +1,107 @@
+.accordion-flow{
+  margin: 0 15px 5px 15px;
+  font-family:"Hiragino Kaku Gothic Pro";
+  background-color: $cream;
+  display: none;
+
+  @include mq("sp"){
+    display: block;
+  }
+
+  &-wrapper{
+    padding-bottom: 60px;
+  }
+
+  &__top{
+    position: relative;
+    height: 55px;
+    padding: 10px 0 0 15px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 .1em $grey;
+    border-radius: 2px;
+
+    &:after{
+      @include awesome("\f107");
+      position: absolute;
+      top: 30%;
+      right: 18px;
+      // color: ;
+      font-size: 24px;
+      z-index: 0;
+    }
+
+    &:hover{
+      >.accordion__ttl{
+        border-bottom: 1px solid #000;
+
+      }
+    }
+
+    &--active{
+      position: relative;
+      box-shadow: none;
+
+      &:after{
+      @include awesome("\f106");
+      position: absolute;
+      top: 30%;
+      right: 18px;
+      font-size: 24px;
+      z-index: 10;
+    }
+
+    }
+  }
+
+  &__img{
+    height: 35px;
+    width: 35px;
+    vertical-align: -1.2em;
+  }
+  
+  &__ttl{
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline;
+    text-align: left;
+    letter-spacing: .1em;
+    margin-left: 10px;
+    
+    
+    &--icon{
+      color: $blue;
+      font-size: 18px;
+      margin-right: 2px;
+      vertical-align: text-bottom;
+
+      @include mq("sp"){
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__bottom{
+    text-align: left;
+    letter-spacing: .05em;
+    line-height: 1.5em;
+    padding: 10px 20px 38px 15px;
+
+  }
+
+  &__txt{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    margin: 10px 0 16px 0;
+
+    &--detail{
+      font-size: 12px;
+      font-weight: 300;
+      margin: 20px 0 0 0;
+      line-height: 1.6;
+      letter-spacing: 0em;
+    }
+  }
+}

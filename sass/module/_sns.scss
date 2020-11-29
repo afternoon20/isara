@@ -1,0 +1,41 @@
+.sns{
+
+  text-align: center;
+
+  &--catch{
+    // margin-top: 10px;
+    padding-bottom: 45px;
+
+    @include mq("sp"){
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+
+  }
+
+  &--footer{
+    margin: 20px 0 35px 0;
+    // padding-left: 7px;
+  }
+
+  &__btn{
+    background-color: #1877F2;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 2px;
+    margin-right: 3px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &--tw{
+      background-color: #1995E0;
+    }
+  }
+
+  .fa-thumbs-up{
+    margin-right: 2px;
+  }
+}

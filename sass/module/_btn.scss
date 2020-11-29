@@ -1,0 +1,84 @@
+.btn{
+  background-color: $btn-color;
+  border-radius: 25px;
+  color: #fff;
+  letter-spacing: .1em;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: normal;
+
+  &:hover{
+    background-color: darken($btn-color,10%);
+  }
+
+  &__img{
+    width: 20px;
+    margin-bottom: 2px;
+  }
+
+  &--header{
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 15px 40px;
+    text-align: center;
+
+    @include mq("tab"){
+      font-size: 12px;
+      letter-spacing: .02em;
+    }
+
+    @include mq("sp"){
+      display: none;
+    }
+
+    &-sp{
+      display: none;
+      border-radius: 0;
+      padding: 10px 10px 12px 12px;
+      font-weight: normal;
+      font-size: 12px;
+      margin-left: auto;
+      text-align: center;
+
+      @include mq("sp"){
+        display: block;
+      }
+    }
+  }
+
+  &--catch{
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 38px 0;
+    border-radius: 50px;
+    margin: 42px 70px 65px 70px;
+    letter-spacing: .05em;
+    line-height: 32px;
+
+    @include mq("tab"){
+      font-size: 18px;
+      padding: 30px 0;
+      margin: 6px 80px 28px 80px;
+      font-weight: 600;
+      letter-spacing: .1em;
+    }
+
+    @include mq("sp"){
+      margin: 20px 20px 25px 20px;
+      padding: 15px 0;
+      font-size: 19px;
+      letter-spacing: .06em;
+    }
+
+    &-ind{
+      display: none;
+      
+
+      @include mq("sp"){
+        display: inline;
+      }
+    }
+  }
+
+}
